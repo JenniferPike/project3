@@ -70,7 +70,7 @@ $(function(){
 		});
 	};
 
-	$('input.submit').on('submit', petApp.getRandom);
+	$('form.buttons').on('submit', petApp.getRandom);
 
 	
 });
