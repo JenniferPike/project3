@@ -4,23 +4,62 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="styles.css"/> -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/styles.css"/>
 </head>
 <body>
 	<header>
-		<h1>Furever Home Finder</h1>
+		<h1>Furever Furiend Finder 🐶 🐱</h1>
 	</header>
 
-	<section>
-		<ul class="dogBreeds">
-			<!-- li's to list dynamically here -->
 
-		</ul>
+	<section>
+		<div>
+			<h2>Pick the Things That Make Your Perfect Pet</h2>
+
+			<form class="buttons">
+				<div class="animalLogo">
+					<input type="radio" name="animal" value="dog" checked="checked"><i class="fas fa-dog" aria-hidden="true"></i><span class="sr-only">DOG</span>
+					<input type="radio" name="animal" value="cat"><i class="fas fa-cat" aria-hidden="true"></i><span class="sr-only">CAT</span>	
+				</div>
+				<div class="genders">
+					<input type="radio" name="gender" value="M" id="M" checked="checked"> <label for="M">Male</label>
+					<input type="radio" name="gender" value="F" id="F"> <label for="F">Female</label>
+				</div>
+				<div class="size">
+					<input type="radio" name="size" value="S" id="S" checked="checked"> <label for="S">Small</label>
+					<input type="radio" name="size" value="M" id="M"> <label for="M">Medium</label>
+					<input type="radio" name="size" value="L" id="L"> <label for="L">Large</label>
+					<input type="radio" name="size" value="XL" id="XL"> <label for="XL">Extra Large</label>
+				</div>
+
+				<div class="submitButton">
+					<input class="submit" type="submit">	
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+	<section class="dogBio">
+	<!-- info to be filled dynamically based on user selections -->
+		<h1 class="dogName"></h1>
+		
+		<div class="animalPhoto">
+		</div>
+
+		
+		<p class="dogBreed"></p>
+
+		<p class="dogDescription"></p>
+
+
 	</section>
 
 <!-- API KEY = d38b91fb79747c074263e655b794ca2a -->
 <!-- API SECRET = c5fb3a76d6c4da6c73315117ac46d76d -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="index.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>
